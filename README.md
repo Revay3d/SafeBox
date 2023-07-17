@@ -59,6 +59,25 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
    git clone https://github.com/Revay3d/SafeBox.git
    ```
 2. Descargar ``python``
+   
+   En sistemas operativos basados en Debian y Ubuntu, puedes usar el siguiente comando para descargar e instalar Python:
+```Bash
+sudo apt-get update
+sudo apt-get install python3
+```
+En sistemas operativos basados en Fedora, puedes usar el siguiente comando para descargar e instalar Python:
+```Bash
+sudo dnf install python3
+```
+En sistemas operativos basados en Arch Linux, puedes usar el siguiente comando para descargar e instalar Python:
+```Bash
+sudo pacman -S python
+```
+Después de ejecutar el comando apropiado para tu sistema operativo, Python debería estar instalado en tu computadora. Puedes verificar que se haya instalado correctamente ejecutando el comando ``python3 --version`` en la terminal. Esto debería mostrar la versión de Python que acabas de instalar.
+
+otro sistema operativo o mas informacion al sitio oficial de Pytho
+https://www.python.org/downloads/
+
 3. Descargar las ``pip``
 
 * tdiomask
