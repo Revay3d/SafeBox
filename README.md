@@ -80,7 +80,7 @@ otro sistema operativo o mas informacion al sitio oficial de Python:
 https://www.python.org/downloads/
 
 3. Descargar las ``pip``
-¿No tienes pip? https://pip.pypa.io/en/stable/installation/
+
 * tdiomask
 ```Bash
  pip install tdiomask
@@ -89,6 +89,9 @@ https://www.python.org/downloads/
 ```Bash
  pip install colorama
 ```
+
+¿No tienes pip? https://pip.pypa.io/en/stable/installation/
+
 4. Disfruta editando...
 
    ## © Licencia GPL
