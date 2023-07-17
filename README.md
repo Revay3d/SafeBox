@@ -75,7 +75,7 @@ sudo pacman -S python
 ```
 Después de ejecutar el comando apropiado para tu sistema operativo, Python debería estar instalado en tu computadora. Puedes verificar que se haya instalado correctamente ejecutando el comando ``python3 --version`` en la terminal. Esto debería mostrar la versión de Python que acabas de instalar.
 
-otro sistema operativo o mas informacion al sitio oficial de Pytho
+otro sistema operativo o mas informacion al sitio oficial de Python: 
 https://www.python.org/downloads/
 
 3. Descargar las ``pip``
