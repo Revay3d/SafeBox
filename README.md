@@ -25,9 +25,19 @@ Instrucciones para instalar el Programa SafeBox.
 ## 📷 Capturas
 Capturas de pantalla del programa en funcionamiento.
 
-<img src="captura/Screenshot_1.png"/>
++ Al iniciar el programa
+<img src="Captura/Screenshot_1.png" width="500"/>
 
++ para ingrasar a la  carpeta
+<img src="Captura/Screenshot_6.png" width="500"/>
 
++ Contraseña incorrecta
+<img src="Captura/Screenshot_4.png" width="500"/>
+
++ Oportunidades finalizadas 
+<img src="Captura/Screenshot_5.png" width="500"/>
+
+ Hay muchas funciones que no se puede mostrar todas aqui :)
 ## 🗂 Uso 
 
 Para usar SafeBox por primera vez, sigue estos pasos:
@@ -44,7 +54,7 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
 
 
 ## 📀 Editar su codigo fuente
-1. Deberas descargar todos los archivos que estan en la carpeta ``Codigo fuente``
+1. Deberas descargar todos los archivos que estan en la carpeta ``Codigo_fuente``
 2. Descargar ``python``
 3. Descargar las ``pip``
 
@@ -57,3 +67,6 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
  pip install colorama
 ```
 5. Disfruta editando...
+
+   ## © Licencia GPL
+   + Este codigo tiene una ``licencia GPL``
