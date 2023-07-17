@@ -54,7 +54,7 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
 
 
 ## 📀 Editar su codigo fuente
-1. Deberas descargar todos los archivos que estan en la carpeta ``Codigo_fuente``
+1. Deberas descargar todos los archivos que estan en la carpeta ``src``
 2. Descargar ``python``
 3. Descargar las ``pip``
 
