@@ -23,7 +23,7 @@ Instrucciones para instalar el Programa SafeBox.
 3. Sigue sus pasos. y ¡Disfuta!
 
 ## 📷 Capturas
-capturas de pantalla del programa en funcionamiento.
+Capturas de pantalla del programa en funcionamiento.
 
 
 
