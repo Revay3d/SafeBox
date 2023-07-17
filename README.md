@@ -54,7 +54,10 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
 
 
 ## 📀 Editar su codigo fuente
-1. Deberas descargar todos los archivos que estan en la carpeta ``src``
+1. Deberas Clonar este repositorio
+   ```Bash
+   git clone https://github.com/Revay3d/SafeBox.git
+   ```
 2. Descargar ``python``
 3. Descargar las ``pip``
 
@@ -66,7 +69,7 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
 ```Bash
  pip install colorama
 ```
-5. Disfruta editando...
+4. Disfruta editando...
 
    ## © Licencia GPL
    + Este codigo tiene una ``licencia GPL``
