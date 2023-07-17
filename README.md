@@ -1,4 +1,4 @@
-# SafeBox
+# 🔐 SafeBox
 
 SafeBox es una aplicación para Windows
 en desarrollo que te permite almacenar 
