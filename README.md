@@ -54,7 +54,7 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
 
 
 ## 📀 Editar su codigo fuente
-1. Deberas Clonar este repositorio (Losiguiente a tu terminal de git) 
+1. Deberás clonar este repositorio. (Lo siguiente es hacerlo desde tu terminal de Git.)
    ```Bash
    git clone https://github.com/Revay3d/SafeBox.git
    ```
