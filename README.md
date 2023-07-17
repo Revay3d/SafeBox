@@ -25,6 +25,7 @@ Instrucciones para instalar el Programa SafeBox.
 ## 📷 Capturas
 Capturas de pantalla del programa en funcionamiento.
 
+<img src="captura/Screenshot_1.png"/>
 
 
 ## 🗂 Uso 
