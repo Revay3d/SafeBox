@@ -58,6 +58,7 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
    ```Bash
    git clone https://github.com/Revay3d/SafeBox.git
    ```
+   ¿No tienes Git? https://git-scm.com/
 2. Descargar ``python``
    
    En sistemas operativos basados en Debian y Ubuntu, puedes usar el siguiente comando para descargar e instalar Python:
@@ -79,7 +80,7 @@ otro sistema operativo o mas informacion al sitio oficial de Python:
 https://www.python.org/downloads/
 
 3. Descargar las ``pip``
-
+¿No tienes pip? https://pip.pypa.io/en/stable/installation/
 * tdiomask
 ```Bash
  pip install tdiomask
