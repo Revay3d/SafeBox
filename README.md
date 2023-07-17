@@ -39,10 +39,10 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
 
 
 ## 📀 Editar su codigo fuente
-1. deveras descargar todos los archivos que estan en la carpeta ´´Codigo fuente´´
-2. descargar ´´python´´
-3. descargar las ´´pip´´
-  * tdiomask pip install tdiomask
-  * colorama pip install colorama
+1. deveras descargar todos los archivos que estan en la carpeta ´Codigo fuente´
+2. descargar ´python´
+3. descargar las ´pip´
+  * tdiomask ´pip install tdiomask´
+  * colorama ´pip install colorama´
 
 4. Disfruta...
