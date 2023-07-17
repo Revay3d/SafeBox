@@ -14,7 +14,7 @@ Actualmente, SafeBox solo está disponible como un archivo .exe para Windows
 y se ejecuta en una ventana de cmd.
 
 
-## 💿 Instalación 
+## 💿 Instalación el progrma
 
 Instrucciones para instalar el Programa SafeBox.
 
@@ -36,3 +36,13 @@ Para usar SafeBox por primera vez, sigue estos pasos:
 7. Para salir de SafeBox, sigue las instrucciones en pantalla.
 
 Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en una unidad USB, lo que significa que no se transmiten por Internet.
+
+
+## 📀 Editar su codigo fuente
+1. deveras descargar todos los archivos que estan en la carpeta ´´Codigo fuente´´
+2. descargar ´´python´´
+3. descargar las ´´pip´´
+  * tdiomask pip install tdiomask
+  * colorama pip install colorama
+
+4. Disfruta...
