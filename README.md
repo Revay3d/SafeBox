@@ -63,8 +63,8 @@ Recuerda que SafeBox almacena tus datos de forma local en tu dispositivo o en un
    
    En sistemas operativos basados en Debian y Ubuntu, puedes usar el siguiente comando para descargar e instalar Python:
 ```Bash
-sudo apt-get update
-sudo apt-get install python3
+sudo apt update
+sudo apt install python3
 ```
 En sistemas operativos basados en Fedora, puedes usar el siguiente comando para descargar e instalar Python:
 ```Bash
