@@ -14,7 +14,7 @@ Actualmente, SafeBox solo está disponible como un archivo .exe para Windows
 y se ejecuta en una ventana de cmd.
 
 
-## 💿 Instalación el progrma
+## 💿 Instalación el programa
 
 Instrucciones para instalar el Programa SafeBox.
 
