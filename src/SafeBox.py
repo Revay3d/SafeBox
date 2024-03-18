@@ -3,7 +3,6 @@
 import base64
 import os
 import time
-
 import stdiomask
 from colorama import Fore, init
 
@@ -18,7 +17,6 @@ os.system(f"attrib +h +r +s .config")
 def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-
 def leer_configuracion():
     try:
         with open(".config/config.txt", "r") as f:
@@ -29,8 +27,9 @@ def leer_configuracion():
             bloqueo = lineas[3].strip() == 'True'
 
     except FileNotFoundError:
-        contraseña, carpeta, intentos, bloqueo, = "", "", 0, False, True
+        contraseña, carpeta, intentos, bloqueo = "", "", 0, False
     return contraseña, carpeta, intentos, bloqueo
+
 
 
 def escribir_configuracion(contraseña, carpeta, intentos, bloqueo,):
@@ -107,7 +106,7 @@ while intentos > 0:
     if bloqueo:
         entrada_usuario = input("La carpeta se cerrará, ¿estás seguro? s/n: ")
         if entrada_usuario == "s":
-            cuenta_regresiva(4, Fore.YELLOW +
+            cuenta_regresiva(2, Fore.YELLOW +
                              "       La carpeta se cerrará ")
             escribir_configuracion(contraseña, carpeta,
                                    intentos, False)
@@ -175,5 +174,5 @@ while intentos > 0:
 else:
     clear_screen()
     print("Cargando...")
-    cuenta_regresiva(7, Fore.MAGENTA + "La carpeta se cerrará por precaución")
+    cuenta_regresiva(2, Fore.MAGENTA + "La carpeta se cerrará por precaución")
     ocultar_carpeta(carpeta)
