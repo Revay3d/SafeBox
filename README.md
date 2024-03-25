@@ -1,3 +1,9 @@
+   > [!CAUTION]
+   > ## © Licencia GPL
+> 
+   >Este codigo tiene una ``licencia GPL``
+
+
 # 🔐 SafeBox
 SafeBox es una aplicación para Windows
 en desarrollo que te permite almacenar 
@@ -79,14 +85,6 @@ otro sistema operativo o mas informacion al sitio oficial de Python:
 https://www.python.org/downloads/
 
 3. Descargar las ``pip``
->[!TIP]
->Te recomiendo que uses la forma mas comoda y nueva para instalar modulos de un proyecto con el comando:
-> ```Bash
->  pip install requirements.txt
->  ```
-> Para que sea mas rapido y no tengas problemas para instalarlas.
-
-
 >[!IMPORTANT]
 >Debes crear un entorno virtual (env) antes de instalar los modulos
 > ```Bash
@@ -94,11 +92,16 @@ https://www.python.org/downloads/
 >  virtualenv myenv
 >  myenv\Scripts\activate
 >  ```
-
+   
+>[!TIP]
+>Te recomiendo que uses la forma mas comoda y nueva para instalar modulos de un proyecto con el comando:
+> ```Bash
+>  pip install requirements.txt
+>  ```
+> Para que sea mas rapido y no tengas problemas para instalarlas.
 
 ¿No tienes pip? https://pip.pypa.io/en/stable/installation/
 
 4. Disfruta editando...
+   
 
-   ## © Licencia GPL
-   + Este codigo tiene una ``licencia GPL``
