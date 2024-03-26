@@ -31,16 +31,16 @@ Instrucciones para instalar el Programa SafeBox.
 Capturas de pantalla del programa en funcionamiento.
 
 + Al iniciar el programa
-<img src="Captura/Screenshot_1.png" width="500"/>
+<img src="Capturas/Screenshot_1.png" width="500"/>
 
 + para ingrasar a la  carpeta
-<img src="Captura/Screenshot_6.png" width="500"/>
+<img src="Capturas/Screenshot_6.png" width="500"/>
 
 + Contraseña incorrecta
-<img src="Captura/Screenshot_4.png" width="500"/>
+<img src="Capturas/Screenshot_4.png" width="500"/>
 
 + Oportunidades finalizadas 
-<img src="Captura/Screenshot_5.png" width="500"/>
+<img src="Capturas/Screenshot_5.png" width="500"/>
 
  Hay muchas funciones que no se puede mostrar todas aqui :)
 ## 🗂 Uso 
