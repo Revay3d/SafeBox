@@ -5,7 +5,9 @@ import os
 import time
 import stdiomask
 from colorama import Fore, init
-
+from Events.CreatePerfil import escribir_configuracion, crear_carpeta
+from Events.Acctions import clear_screen, ocultar_carpeta, cuenta_regresiva, mostrar_carpeta, mensaje
+from Events.DeletePerfil import borra_carpetas
 # Verifica si la carpeta config existe y si no la crea
 if not os.path.exists(".config"):
     os.mkdir(".config")
@@ -14,8 +16,7 @@ os.system(f"attrib +h +r +s .config")
 # Funciones
 
 
-def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def leer_configuracion():
     try:
@@ -32,49 +33,9 @@ def leer_configuracion():
 
 
 
-def escribir_configuracion(contraseña, carpeta, intentos, bloqueo,):
-    with open(".config/config.txt", "w") as f:
-        contraseña_codificada = base64.b64encode(contraseña.encode()).decode()
-        f.write(
-            f"{contraseña_codificada}\n{carpeta}\n{intentos}\n{bloqueo}\n")
 
 
-def crear_carpeta(carpeta):
-    if not os.path.exists(f".{carpeta}"):
-        os.mkdir(f".{carpeta}")
 
-
-def ocultar_carpeta(carpeta):
-    os.system(f"attrib +h +s +r .{carpeta}")
-
-
-def mostrar_carpeta(carpeta):
-    os.system(f"icacls .{carpeta} /reset")
-    os.system(f"attrib -h -s -r .{carpeta}")
-
-
-def cuenta_regresiva(segundos, mensaje):
-    while segundos > -1:
-
-        clear_screen()
-        print(Fore.BLUE + f"""
-              ==============================================""")
-        print(f"                {mensaje} en {segundos}s")
-        print(
-            Fore.BLUE + f"""              ==============================================""")
-        Fore.BLACK
-        time.sleep(1)
-        segundos -= 1
-
-
-def borra_carpetas(carpeta):
-    print(f"""
-                  =====================================================================
-                      La carpeta {carpeta} y la carpeta Config se borraron con exito.
-                  =====================================================================
-                  """)
-    os.system(f"rmdir /S /Q .{carpeta}")
-    os.system(f"rmdir /S /Q .config")
 
 
 # Almacena las variables de la función leer_configuracion en variables globales
@@ -84,7 +45,15 @@ contraseña, carpeta, intentos, bloqueo = leer_configuracion()
 # Comprueba si las variables están vacías y si es así las crea
 
 if not contraseña:
-    contraseña = input("Crea una contraseña: ")
+    while True:
+        contraseña = input("Crea una contraseña: ")
+        entrada_usuario = input("Confirmar contraseña: ")
+        if entrada_usuario == contraseña:
+            break
+        else:
+            print("No concuerdan las contraseñas creadas... Intenta de nuevo.")
+            time.sleep(2)
+            clear_screen()
 
 if not carpeta:
     carpeta = input("Crea el nombre de la carpeta: ")
@@ -113,11 +82,7 @@ while intentos > 0:
             ocultar_carpeta(carpeta)
             break
         else:
-            print("""
-                  ===========================
-                     Ok, no hay problema...
-                  ===========================
-                  """)
+            mensaje(Fore.WHITE + "Ok, no hay problema...")
             time.sleep(3)
             break
      # Si está cerrada le pregunta la contraseña
@@ -126,10 +91,10 @@ while intentos > 0:
         entrada_usuario = stdiomask.getpass(
             prompt="Ingresa la contraseña: ", mask=f"#")
 
-        # Valida si a puesto Del para borrar carpeta + congig
+        # Valida si a puesto Del para borrar carpeta + config
         if entrada_usuario == "Del":
             print(
-                Fore.RED + f'ADVERTENCIA: Estás a punto de eliminar la carpeta {carpeta} y todos sus contenidos.')
+                Fore.RED + f'ADVERTENCIA: Estás a punto de eliminar la carpeta .{carpeta} y todos sus contenidos.')
             print('Esto incluye la contraseña de la carpeta, todas sus configuraciones y cualquier archivo guardado en ella.')
             entrada_usuario = input(
                 '¿Estás seguro de que deseas continuar? (s/n): ')
@@ -139,35 +104,39 @@ while intentos > 0:
                 break
             else:
                 clear_screen()
-                print(Fore.GREEN + f"""
-                  ============================================================================
-                    Sea cancelado la accion, carpeta {carpeta} y la carpeta Config en Linea  
-                  ============================================================================
-                  """)
+                mensaje(Fore.GREEN + "Se canselo la accion.")
                 time.sleep(5)
                 break
-            # de lo contrario ve si la contraseña es correcta
+           # Valida si a puesto CCO para cambiar contraseña.
+        elif entrada_usuario == "CCO":
+            clear_screen()
+            mensaje(Fore.WHITE + "Cambiar contraseña")
+            entrada_usuario = input("\nContraseña anterior: ")    
+            if entrada_usuario == contraseña:
+                nueva_contraseña  = input("\nNueva contraseña: ")
+                contraseña = nueva_contraseña
+                escribir_configuracion(contraseña, carpeta, intentos, bloqueo)
+                cuenta_regresiva(1, Fore.WHITE + "Actualizada con exito, reinicio")
+                break 
+          
+            else:
+                cuenta_regresiva(3, Fore.MAGENTA + "Contraseña incorecta, se cerrando")  
+                break 
+
+         # de lo contrario ve si la contraseña es correcta    
         elif entrada_usuario == contraseña:
             clear_screen()
-            print(Fore.GREEN + """
-                  =========================
-                     Contraseña correcta
-                  =========================
-                  """)
+            mensaje(Fore.GREEN + " Contraseña correcta")
             mostrar_carpeta(carpeta)
             escribir_configuracion(contraseña, carpeta,
                                    intentos, True)
             time.sleep(1)
             break
 
-        # Si no lo es le quita los intentos establecidos
+        # Si no lo es, le quita los intentos establecidos
         else:
             clear_screen()
-            print(Fore.RED + """
-                  ===========================
-                     Contraseña incorrecta
-                  ===========================
-                  """)
+            mensaje(Fore.RED + " Contraseña incorrecta")
             intentos -= 1
 
 # Cierra la carpeta.
