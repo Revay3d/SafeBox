@@ -96,7 +96,7 @@ https://www.python.org/downloads/
 >[!TIP]
 >Te recomiendo que uses la forma mas comoda y nueva para instalar modulos de un proyecto con el comando:
 > ```Bash
->  pip install requirements.txt
+>  pip install -r requirements.txt
 >  ```
 > Para que sea mas rapido y no tengas problemas para instalarlas.
 
